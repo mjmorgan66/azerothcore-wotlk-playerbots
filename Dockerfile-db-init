@@ -1,0 +1,12 @@
+FROM alpine:3.18
+
+RUN apk add --no-cache bash coreutils
+
+# Copy entire directory recursively
+COPY env/dist/etc /preload/etc
+COPY modules /preload/modules
+
+COPY copy-if-missing.sh /copy-if-missing.sh
+RUN chmod +x /copy-if-missing.sh
+
+ENTRYPOINT ["/copy-if-missing.sh"]
