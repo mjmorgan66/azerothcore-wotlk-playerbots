@@ -28,7 +28,7 @@ enum Spells
     // ***** Main Phase 1 ********
     //Eye Spells
     SPELL_FREEZE_ANIM                           = 16245,
-    SPELL_GREEN_BEAM                            = 26134,
+    SPELL_GREEN_BEAM                            = 26143, 
     SPELL_DARK_GLARE                            = 26029,
     SPELL_RED_COLORATION                        = 22518,        //Probably not the right spell but looks similar
 
